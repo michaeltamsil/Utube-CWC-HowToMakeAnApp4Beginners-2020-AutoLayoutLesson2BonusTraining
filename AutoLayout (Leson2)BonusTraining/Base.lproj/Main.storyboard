@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout__Leson2_BonusTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="Q45-m3-H38">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="by9-jn-lu9">
+                                <rect key="frame" x="0.0" y="717" width="768" height="307"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City by the Sea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56h-J7-oxw">
+                                        <rect key="frame" x="20" y="20" width="728" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is such a beautiful place!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwJ-7A-EqJ">
+                                        <rect key="frame" x="20" y="59" width="728" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xwJ-7A-EqJ" secondAttribute="trailing" constant="20" id="2B1-Ka-isF"/>
+                                    <constraint firstItem="56h-J7-oxw" firstAttribute="leading" secondItem="by9-jn-lu9" secondAttribute="leading" constant="20" id="9aG-cc-WaP"/>
+                                    <constraint firstItem="xwJ-7A-EqJ" firstAttribute="leading" secondItem="by9-jn-lu9" secondAttribute="leading" constant="20" id="FUE-AV-RN1"/>
+                                    <constraint firstAttribute="trailing" secondItem="56h-J7-oxw" secondAttribute="trailing" constant="20" id="L5y-Dm-NJ6"/>
+                                    <constraint firstItem="xwJ-7A-EqJ" firstAttribute="top" secondItem="56h-J7-oxw" secondAttribute="bottom" constant="10" id="L7x-EO-bk2"/>
+                                    <constraint firstItem="56h-J7-oxw" firstAttribute="top" secondItem="by9-jn-lu9" secondAttribute="top" constant="20" id="QDj-89-7Cw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="by9-jn-lu9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="FMN-RR-d6S"/>
+                            <constraint firstAttribute="trailing" secondItem="Q45-m3-H38" secondAttribute="trailing" id="JlG-mk-Oh8"/>
+                            <constraint firstAttribute="bottom" secondItem="by9-jn-lu9" secondAttribute="bottom" id="M90-Lh-0zc"/>
+                            <constraint firstItem="by9-jn-lu9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OaO-yT-1F1"/>
+                            <constraint firstItem="Q45-m3-H38" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="VCy-c1-oIK"/>
+                            <constraint firstItem="Q45-m3-H38" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dbm-i2-M3o"/>
+                            <constraint firstAttribute="trailing" secondItem="by9-jn-lu9" secondAttribute="trailing" id="sdl-nI-dwm"/>
+                            <constraint firstItem="Q45-m3-H38" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yso-cO-LeQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="landscape" width="2005" height="1085"/>
+    </resources>
+</document>
